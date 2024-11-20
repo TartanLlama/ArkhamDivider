@@ -1,0 +1,82 @@
+@import "../../../../sass/mixins.scss";
+
+.container {
+    font-family: 'Teutonic', 'Conkordia', 'Arkhamic', sans-serif;
+    color: #352e1f;
+
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+
+
+.content {
+    position: absolute;
+    z-index: 2;
+    top: 3.5mm;
+    left: 3.5mm;
+}
+
+.title {
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 1.3em;
+    top: 3mm;
+    z-index: 2;
+    line-height: 1;
+    color: #2E2622;
+    font-size: 18pt;
+
+    &:hover .clear {
+        display: flex;
+    }
+}
+
+.iconCorner {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: 3mm;
+    left: 8mm;
+
+    &:hover {
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
+    }
+}
+
+.campaignIcon {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: 3mm;
+    right: 8mm;
+
+    &:hover {
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
+    }
+}
+
+.icon {
+    position: absolute;
+    left: 50%;
+    top: 3mm;
+    font-size: 18pt;
+    height: 3.7mm;
+    display: flex;
+    transform: translateX(-50%);
+    align-items: end;
+}
+
+.menu {
+    position: absolute;
+    z-index: 2;
+    top: 12mm;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+}
+
+.menuInner {
+    gap: 10px;
+}
